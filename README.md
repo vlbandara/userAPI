@@ -76,5 +76,5 @@ curl -X DELETE http://localhost:8080/user/1
 
 ## Visit my blog
 
-aggrandizer.info
 
+[aggrandizer.info](https://www.aggrandizer.info/)
