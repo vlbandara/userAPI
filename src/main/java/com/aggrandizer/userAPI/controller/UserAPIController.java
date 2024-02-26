@@ -17,7 +17,7 @@ public class UserAPIController {
 
 
     @GetMapping("{id}")
-    public User getUser(@PathVariable("id") String id){
+    public User getUser(@PathVariable("id") int id){
         return userService.getUser(id);
     }
     @GetMapping
@@ -38,10 +38,12 @@ public class UserAPIController {
     }
 
     @DeleteMapping("{id}")
-    public String deleteUser(String id){
+    public String deleteUser(@PathVariable int id){
         userService.deleteUser(id);
         return "User deleted successfully";
     }
 
 
 }
+
+

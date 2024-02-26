@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name = "user_info")
 public class User {
     @Id
-    private String id;
+    private int id;
     private String firstname;
     private String lastname;
     private String email;
@@ -18,18 +18,18 @@ public class User {
     public User() {
     }
 
-    public User(String id, String firstname, String lastname, String email) {
+    public User(int id, String firstname, String lastname, String email) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
